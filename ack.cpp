@@ -18,7 +18,7 @@ int main(int argc, char *argv[]) {
             std::cout << "A(" << m << ", " << n << ")" << std::endl;
         }
     }*/
-    ackermann(4, 1);
+    std::cout << ackermann(4, 1) << std::endl; //Currently breaks life
 }
 
 mpz_int ackermann(mpz_int m, mpz_int n) {
@@ -26,12 +26,10 @@ mpz_int ackermann(mpz_int m, mpz_int n) {
         std::cout << "Route 1: m = " << m << ", n= " << n << std::endl;
         return n + 1;
     }
-    if (m > 0 && n == 0) {
+    if (n == 0) {
         std::cout << "Route 2: m = " << m << ", n= " << n << std::endl;
         return (ackermann(m - 1, 1));
     }
-    else {
-        std::cout << "Route 3: m = " << m << ", n= " << n << std::endl;
-        return (ackermann(m - 1, ackermann(m, n - 1)));
-    }
+    std::cout << "Route 3: m = " << m << ", n= " << n << std::endl;
+    return (ackermann(m - 1, ackermann(m, n - 1)));
 }
