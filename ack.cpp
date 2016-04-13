@@ -1,7 +1,5 @@
 #include <iostream>
 #include <boost/multiprecision/gmp.hpp>
-#include <boost/thread.hpp>
-#include <boost/date_time.hpp>
 
 
 using namespace boost::multiprecision;
