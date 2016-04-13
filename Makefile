@@ -6,7 +6,5 @@ all: ackermann.o threadtest.o
 
 ackermann.o:ack.cpp
 	$(CC) $(CFLAGS) ack.cpp -o ackermann.o
-threadtest.o:threadtest.cpp
-	$(CC) $(CFLAGS) threadtest.cpp -o threadtest.o
 clean:
 	rm *.o
