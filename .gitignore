@@ -2,3 +2,5 @@
 # Object files
 *.o
 
+### Clion IDE ###
+.idea/
