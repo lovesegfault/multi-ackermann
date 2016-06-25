@@ -1,5 +1,5 @@
 CC=g++
-CFLAGS=-std=c++14 -Wall -O2 -lboost_system -lboost_thread -lgmp
+CFLAGS=-std=c++14 -Wall -O2 -lgmpxx -lgmp
 LDFLAGS=
 SOURCES=ack.cpp
 all: ackermann.o
