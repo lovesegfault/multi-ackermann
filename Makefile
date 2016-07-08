@@ -1,5 +1,5 @@
 CC=g++
-CFLAGS=-std=c++14 -Wall -O2 -lgmpxx -lgmp
+CFLAGS=-Wall -Wextra -Wformat-security -Wmissing-include-dirs -Wuninitialized -Wtrampolines -Wconversion -Wuseless-cast -Wlogical-op -Wctor-dtor-privacy -Wold-style-cast -Wno-reorder -Wno-unused-parameter -Werror=delete-non-virtual-dtor -Werror=return-type -Werror=implicit -std=c++14 -O2 -lgmpxx -lgmp
 SOURCES=ack.cpp
 all: ackermann.o
 

@@ -1,17 +1,20 @@
 #include <iostream>
 #include <gmpxx.h>
+#include <sstream>
 
 mpz_class ackermann(mpz_class i, mpz_class n);
 
 
 int main(int argc, char *argv[]) {
-
-    for (mpz_class m = 1; mpz_cmp_ui(m.get_mpz_t(), 0) >= 0; ++m) {
-        for (mpz_class n = 0; mpz_cmp_ui(n.get_mpz_t(), 10) <= 0; ++n) {//n<= 10
-            std::cout << "A(" << m.get_str(10) << ", " << n.get_str(10) << ") = " << ackermann(m, n).get_str(10) <<
-            std::endl;
+    for (long m = 1; m >= 0; ++m) {
+#pragma omp parallel for
+        for (long n = 0; n <= 10; ++n) {
+            std::stringstream buf;
+            buf << "A(" << m << ", " << n << ") = " <<
+            ackermann(m, n).get_str(10) << "\n";
+            std::cout << buf.rdbuf();
         }
-    }
+        }
 }
 
 
