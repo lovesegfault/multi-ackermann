@@ -25,7 +25,7 @@ clue how to fix it.
 
 *   Have a simple Ackermann base code - :white_check_mark:
 *   Implement arbitrary precision - :white_check_mark:
-*   Implement parallelism - :x:
+*   Implement parallelism - :white_check_mark:
 *   Optimize code - :x:
 
 <sub>:white_check_mark: - Done, :clock4: - On the works,  :x: - To do</sub>
