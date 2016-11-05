@@ -20,6 +20,7 @@ clue how to fix it.
 ## Dependencies
 
 *   [GMP](https://gmplib.org/)
+*   [OpenMP](http://openmp.org/wp/)
 
 ## TODO
 
