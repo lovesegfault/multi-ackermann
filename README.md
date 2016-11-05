@@ -5,7 +5,7 @@ This is not really meant to have any use, I just thought it would be cool to
  necessarily, check the TODO category down below to make sure.
 
 Using the recursive implementation of the Ackermann function the stack gets
-blown pretty quickly, so I have opted for an iterative approach instead this,
+blown pretty quickly, so I have opted for an iterative approach instead. This,
 however, brings other limitations to the table. The need to deal with arrays
  means *true* arbitrary precision can't be achieved, since array declarations
 only accept up to unsigned long as size determinator, not mpz_t or mpz_class.
